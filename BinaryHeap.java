@@ -39,7 +39,7 @@ public class BinaryHeap
         }
 
         data = temp;
-    }
+    } //growarray
 
     int remove()
     {
@@ -78,22 +78,22 @@ public class BinaryHeap
             data[i] = temp;
             shiftdown(minIndex);
         }
-    }
+    } //shiftdown
 
     int leftChild(int i)
     {
         return i * 2 + 1;
-    }
+    } //leftchild
 
     int rightChild(int i)
     {
         return i * 2 + 2;
-    }
+    } //rightchild
 
     int parent(int i)
     {
         return (i - 1)/2;
-    }
+    } //parent
 
     void swap(int[] b, int i, int j)
     {
